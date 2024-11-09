@@ -99,6 +99,8 @@ def YouTubeDL(url):
         "format": "bestvideo[height<=1080]+bestaudio/best[height<=1080]",
         "allow_multiple_video_streams": True,
         "allow_multiple_audio_streams": True,
+#        'outtmpl': os.path.join(download_path, '%(title)s.%(ext)s'),
+        'merge_output_format': 'mp4',
         "writethumbnail": True,
         "--concurrent-fragments": 4 , # Set the maximum number of concurrent fragments
         "allow_playlist_files": True,
